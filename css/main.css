@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply max-w-7xl px-5 py-24 m-auto;
+    }
+    .post {
+        @apply bg-gray-100 p-8 rounded flex flex-col gap-5;
+    }
+    .input {
+        @apply px-5 py-4 focus:border-gray-900 rounded outline-0 border-2 border-blue-600 transition;
+    }
+    .button {
+        @apply px-7 py-4 rounded bg-blue-500 text-white transition font-medium;
+    }
+    .button:hover {
+        @apply bg-blue-600 text-white;
+    }
+}
